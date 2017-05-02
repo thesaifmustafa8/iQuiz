@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1vb-gI-5vQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iQuiz Part 1-->
+        <scene sceneID="qzN-i1-81d">
+            <objects>
+                <tableViewController id="IMa-kN-sPG" customClass="ViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V0u-Uj-Ymq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="IMa-kN-sPG" id="mT1-KA-HQj"/>
+                            <outlet property="delegate" destination="IMa-kN-sPG" id="ehe-ik-2Lv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="iQuiz Part 1" id="58I-qw-YlX">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="IoG-Hv-FQw">
+                            <connections>
+                                <action selector="settingsButton:" destination="IMa-kN-sPG" id="Xmn-Ea-DMD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abQ-zb-R1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iz2-pa-uam">
+            <objects>
+                <navigationController id="1vb-gI-5vQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LAx-PU-eUf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IMa-kN-sPG" kind="relationship" relationship="rootViewController" id="0Vv-LV-exf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8G-Y5-KJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="478"/>
+        </scene>
+    </scenes>
+</document>
