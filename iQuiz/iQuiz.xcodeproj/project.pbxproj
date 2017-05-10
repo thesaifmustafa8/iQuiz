@@ -14,6 +14,9 @@
 		91BD992D1EB8653F00C09EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BD992B1EB8653F00C09EBC /* LaunchScreen.storyboard */; };
 		91BD99381EB8653F00C09EBC /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD99371EB8653F00C09EBC /* iQuizTests.swift */; };
 		91BD99431EB8653F00C09EBC /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD99421EB8653F00C09EBC /* iQuizUITests.swift */; };
+		91D143231EC2641400EA4F08 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D143221EC2641400EA4F08 /* QuestionViewController.swift */; };
+		91D143251EC2642600EA4F08 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D143241EC2642600EA4F08 /* AnswerViewController.swift */; };
+		91D143271EC2643700EA4F08 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D143261EC2643700EA4F08 /* FinishedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		91BD993E1EB8653F00C09EBC /* iQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BD99421EB8653F00C09EBC /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		91BD99441EB8653F00C09EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D143221EC2641400EA4F08 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		91D143241EC2642600EA4F08 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		91D143261EC2643700EA4F08 /* FinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				91BD99221EB8653F00C09EBC /* AppDelegate.swift */,
 				91BD99241EB8653F00C09EBC /* ViewController.swift */,
 				91BD99261EB8653F00C09EBC /* Main.storyboard */,
+				91D143221EC2641400EA4F08 /* QuestionViewController.swift */,
+				91D143241EC2642600EA4F08 /* AnswerViewController.swift */,
+				91D143261EC2643700EA4F08 /* FinishedViewController.swift */,
 				91BD99291EB8653F00C09EBC /* Assets.xcassets */,
 				91BD992B1EB8653F00C09EBC /* LaunchScreen.storyboard */,
 				91BD992E1EB8653F00C09EBC /* Info.plist */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D143251EC2642600EA4F08 /* AnswerViewController.swift in Sources */,
 				91BD99251EB8653F00C09EBC /* ViewController.swift in Sources */,
 				91BD99231EB8653F00C09EBC /* AppDelegate.swift in Sources */,
+				91D143231EC2641400EA4F08 /* QuestionViewController.swift in Sources */,
+				91D143271EC2643700EA4F08 /* FinishedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +528,7 @@
 				91BD99491EB8653F00C09EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91BD994A1EB8653F00C09EBC /* Build configuration list for PBXNativeTarget "iQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				91BD994C1EB8653F00C09EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91BD994D1EB8653F00C09EBC /* Build configuration list for PBXNativeTarget "iQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				91BD994F1EB8653F00C09EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
